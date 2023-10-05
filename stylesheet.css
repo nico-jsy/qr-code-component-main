@@ -1,0 +1,78 @@
+html, body {
+  font-family: 'Outfit', sans-serif;
+  /* Ensure the body takes up the full height of the viewport */
+  height: 100%;
+  /* Remove default margins */
+  margin: 0 auto;
+}
+h3 {
+  font-weight: 400;
+}
+p {
+  font-weight: 100;
+  font-size: 0.8em;
+  }
+.box1 {
+  /* Use flexbox for centering */
+  display: flex;
+  /* Center horizontally */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center; 
+  /* Center the content inside the container */
+  text-align: center;
+  }
+  .box2 {
+    /* Set the width of the outer box */
+    width: 80%;
+    /* Set the height of the outer box */
+    height:45em;
+    /* Position property should be relative */
+    position: relative;
+    background-color: hsl(212, 45%, 89%);
+    margin:6% auto;
+    box-shadow: 15px 15px 40px lightgrey;
+  }
+  .box3 {
+    /* Set the width of the inner box */
+    width: 20%;
+    /* Set the height of the inner box */
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    /* Position property should be absolute */
+    position: absolute;
+     /* Move the top of the inner box to the center of the outer box */
+     top: 50%;
+     /* Move the left of the inner box to the center of the outer box */
+     left: 50%;
+     /* Center the inner box perfectly */
+     transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+  img {
+    width: 80%;
+    height: 12%;
+    border-radius: 10px;
+    margin: 10px 10%;
+  }
+  .text {
+    text-align: center;
+    color: transparent;
+    text-shadow: 0px 0 1.5px #000;
+    padding: 0 35px 30px 35px;
+  }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  @media screen and (max-width: 375px) {
+    /* CSS rules for screens smaller than 375px */
+    .box3 {
+      /* Set the width of the inner box */
+      width: 40%;
+    }
+  }
